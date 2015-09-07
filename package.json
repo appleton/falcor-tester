@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-bearer-token": "^2.1.0",
+    "falcor-express": "^0.1.2",
+    "falcor-router": "^0.2.9",
+    "heroku-client": "^2.1.0"
+  },
+  "devDependencies": {
+    "jspm": "^0.16.2",
+    "nodemon": "^1.4.1"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "public"
+    },
+    "dependencies": {
+      "falcor": "npm:falcor@^0.1.12",
+      "falcor-http-datasource": "npm:falcor-http-datasource@^0.1.2"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.22",
+      "babel-runtime": "npm:babel-runtime@^5.8.20",
+      "core-js": "npm:core-js@^1.1.0"
+    }
+  }
+}
